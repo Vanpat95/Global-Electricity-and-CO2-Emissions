@@ -1,0 +1,21 @@
+
+
+.chartCard2 {
+  width: 100vw;
+  height: calc(60vh - 40px);
+  background: rgba(194, 161, 172, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chartBox2 {
+  width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgb(129, 123, 125);
+  background: white;
+}
+
+  
+
+
