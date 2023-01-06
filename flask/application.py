@@ -19,14 +19,12 @@ def co2():
     all=[]
     con = sqlite3.connect("project4db.db")
     cur = con.cursor()
-    # """Return a list of passenger data including the name, age, and sex of each passenger"""
-    # Query all passengers
+    
     results = cur.execute('SELECT "Year","Country","CO2(MMtonnes)","Latitude","Longitude" FROM CO2new').fetchall()
-    # results = session.query(Passenger.name, Passenger.age, Passenger.sex).all()
+    
     print(results)
     # session.close()
 
-    # Create a dictionary from the row data and append to a list of all_passengers
     all_co2 = []
     for year, country, tonnes, lat, long in results:
         
